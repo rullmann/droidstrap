@@ -1,14 +1,14 @@
 @import url("pygment.css");
 
 body {
-    font-size: 18px;
-    line-height: 26px;
-    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
-    font-family: 'Droid Serif',serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ li {
 
 cite {
     background: #eeeeee;
-    font-family: 'Droid Sans Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
+    font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 
 /* Nav */
@@ -50,7 +50,7 @@ nav ul {
         list-style: none;
         padding: 0px;
         margin: 30px 0 0 0;
-        font-family: 'Droid Serif', serif;
+        font-family: Verdana, Geneva, sans-serif
 }
 
 nav li {
@@ -115,7 +115,7 @@ div.article-content li {
     margin-top: 1em;
     font-style: italic;
     color: #B2B2CA;
-    font-family: 'Droid Serif', serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 .archivesyears article {
         margin: 0 0 27px 0;
@@ -131,7 +131,7 @@ div.article-content li {
         display: block;
 }
 .readmore {
-        font-family: 'Droid Serif', serif;
+        font-family: Verdana, Geneva, sans-serif;
 }
 
 /* About */
