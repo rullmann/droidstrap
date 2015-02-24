@@ -37,9 +37,6 @@
                     </h1>
                     <nav>
                         <ul>
-                            {% for title, link in MENUITEMS %}
-                                <li><a href="{{ link }}">{{ title }}</a></li>
-                            {% endfor %}
                             {% if DISPLAY_PAGES_ON_MENU %}
                                 {% for p in PAGES %}
                                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
@@ -51,6 +48,10 @@
                                     {% endfor %}
                                 {% endif %}
                             {% endif %}
+                            <hr>
+                            {% for title, link in MENUITEMS %}
+                                <li><a href="{{ link }}">{{ title }}</a></li>
+                            {% endfor %}
                         </ul>
                     </nav>
                 </header>
@@ -61,11 +62,12 @@
             </div>
             <div class="row">
                 <footer class="offset4 span7">
-                    <p>&copy; {{ SITENAME }} &ndash;
-                        Built with <a href="https://github.com/jamescooke/droidstrap">Droidstrap theme</a>
-                        for <a href="http://blog.getpelican.com/">Pelican</a>
+                    <p>&copy; {{ AUTHOR }} &ndash;
+                        Based on <a href="https://github.com/jamescooke/droidstrap">Droidstrap theme</a>
+                        for <a href="http://blog.getpelican.com/">Pelican</a>.
                     </p>
-                    <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+                    <p>Changes made can be found <a href="https://github.com/rullmann/droidstrap">here</a>.</p>
+                    <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">CC BY-SA 3.0 License</a>.</p>
                 </footer>
         </div>
     </body>
