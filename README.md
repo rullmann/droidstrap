@@ -2,7 +2,15 @@
 
 A Pelican theme using Bootstrap 2 and Droid fonts.
 
-Example running on [jamescooke.info](http://jamescooke.info), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
+Original running on [jamescooke.info](http://jamescooke.info), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
+
+Fork will be running on [erinnerungsfragmente.de](https://erinnerungsfragmente.de)
+
+## Additional Information
+
+This theme has been forked from [jamescooke/droidstrap](https://github.com/jamescooke/droidstrap).
+
+I'd like to thank him for his hard work on this them and for providing it under the CC BY-SA 3.0 license. It allows me to fork the theme, bring in my personal flavour and be perfectly happy with it. 
 
 ## Features
 
