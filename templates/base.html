@@ -48,10 +48,15 @@
                                     {% endfor %}
                                 {% endif %}
                             {% endif %}
-                            <hr>
                             {% for title, link in MENUITEMS %}
+                            <hr>
                                 <li><a href="{{ link }}">{{ title }}</a></li>
                             {% endfor %}
+                            <ul class="social">
+                              {% for name, link in SOCIAL %}
+                              <li><a href="{{ link }}">{{ name }}</a><i></i></li>
+                              {% endfor %}
+                            </ul>
                         </ul>
                     </nav>
                 </header>
@@ -64,9 +69,10 @@
                 <footer class="offset4 span7">
                     <p>&copy; {{ AUTHOR }} &ndash;
                         Based on <a href="https://github.com/jamescooke/droidstrap">Droidstrap theme</a>
-                        for <a href="http://blog.getpelican.com/">Pelican</a>.<br />
-                    <p>Changes made can be found <a href="https://github.com/rullmann/droidstrap">here</a>.<br />
-                    <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">CC BY-SA 3.0 License</a>.<br />
+                        for <a href="http://blog.getpelican.com/">Pelican</a>.
+                    </p>
+                    <p>Changes made can be found <a href="https://github.com/rullmann/droidstrap">here</a>.</p>
+                    <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">CC BY-SA 3.0 License</a>.</p>
                 </footer>
         </div>
     </body>

@@ -6,6 +6,12 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+blockquote p {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: Monaco, "Lucida Console" monospace;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
     font-family: Verdana, Geneva, sans-serif;
@@ -58,7 +64,7 @@ nav ul {
         list-style: none;
         padding: 0px;
         margin: 30px 0 0 0;
-        font-family: Verdana, Geneva, sans-serif
+        font-family: Verdana, Geneva, sans-serif;
 }
 
 nav li {
@@ -95,11 +101,11 @@ div.pagination-right {
 
 /* Footer */
 footer {
-        margin:100px 0px 20px 0px;
+        margin:40px 0px 20px 0px;
 }
 footer p{
         color:#B2B2CA;
-        font:italic 12px/12px 'Droid Serif', serif;
+        font:italic 12px/12px Verdana, Geneva, sans-serif;
 }
 
 /* Blog */
@@ -141,6 +147,35 @@ div.article-content li {
 .readmore {
         font-family: Verdana, Geneva, sans-serif;
 }
+
+/* Social */
+
+.social {
+  list-style-type: none;
+}
+
+.social li {
+  clear: both;
+}
+
+.social a {}
+
+.social i { 
+  float: left;
+  margin-right: 3px;
+  padding-top: 4px;
+}
+.social a[href*='twitter.com'] + i:before {content: url('../theme/images/icons/twitter-18px.png'); }
+.social a[href*='linkedin.com'] + i:before {content: url('../theme/images/icons/linkedin-18px.png'); }
+.social a[href*='xing.com'] + i:before {content: url('../theme/images/icons/xing-18px.png'); }
+.social a[href*='github.com'] + i:before {content: url('../theme/images/icons/github-18px.png'); }
+.social a[href*='google.com'] + i:before {content: url('../theme/images/icons/google-18px.png'); }
+.social a[href*='delicious.com']:before {content: url('../theme/images/icons/delicious-18px.png'); }
+.social a[href*='digg.com']:before {content: url('../theme/images/icons/digg-18px.png'); }
+.social a[href*='facebook.com']:before {content: url('../theme/images/icons/facebook-18px.png'); }
+.social a[href*='stackoverflow.com']:before {content: url('../theme/images/icons/stackoverfow-18px.png'); }
+.social a[href*='rss.xml']:before {content: url('../theme/images/icons/feed-18px.png'); }
+.social a[href*='atom.xml']:before {content: url('../theme/images/icons/feed-18px.png'); }
 
 /* About */
 
