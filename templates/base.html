@@ -35,9 +35,12 @@
         <div class="container">
             <div class="row">
                 <header class="span3">
-                    <h1 class="blogtitle">
-                        <a href="{{ SITEURL }}"><img id="profileimg" src="{{ PROFILE_IMG_URL }}" alt="{{ SITENAME }}" ></a>{{ SITENAME }}</h1>
+                    <h2 class="blogtitle">
+                        <a href="{{ SITEURL }}"><img id="profileimg" src="{{ PROFILE_IMG_URL }}" alt="{{ SITENAME }}" ></a><br>{{ SITENAME }}</h2>
                     <nav>
+                        {% if SITESUBNAME %}
+                        {{ SITESUBNAME }}
+                        {% endif %}
                         <ul>
                             {% if DISPLAY_PAGES_ON_MENU %}
                                 {% for p in PAGES %}
