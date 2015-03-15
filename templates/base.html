@@ -36,10 +36,10 @@
             <div class="row">
                 <header class="span3">
                     <h2 class="blogtitle">
-                        <a href="{{ SITEURL }}"><img id="profileimg" src="{{ PROFILE_IMG_URL }}" alt="{{ SITENAME }}" ></a>{{ SITENAME }}</h2>
+                        <a href="{{ SITEURL }}"><img id="profileimg" src="{{ PROFILE_IMG_URL }}" alt="{{ SITENAME }}" >{{ SITENAME }}</a></h2>
                     <nav>
                         <ul>
-                            {% if SITESUBNAME %}<li>{{ SITESUBNAME }}</li>{% endif %}
+                            {% if SITESUBNAME %}<li>{{ SITESUBNAME }}</li><br>{% endif %}
                             {% if DISPLAY_PAGES_ON_MENU %}
                                 {% for p in PAGES %}
                                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
