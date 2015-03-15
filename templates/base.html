@@ -55,14 +55,14 @@
                             <hr>
                                 <li><a href="{{ link }}">{{ title }}</a></li>
                             {% endfor %}
-			    <hr>
+                            <hr>
                             <ul class="social">
                               {% for name, link in SOCIAL %}
                               <li><a href="{{ link }}">{{ name }}</a><i></i></li>
                               {% endfor %}
-			    </ul>
+                            </ul>
                             {% if FEED_ALL_ATOM %}
-			    <hr>
+                            <hr>
                               <li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
                             {% endif %}
                             {% if FEED_ALL_RSS %}
