@@ -1,40 +1,46 @@
 # Droidstrap
 
-A Pelican theme using Bootstrap 2 and Droid fonts.
+A Pelican theme using Bootstrap 2 and standard fonts.
+Forked from [jamescooke/droidstrap](https://github.com/jamescooke/droidstrap).
+James used Droid Fonts. This fork doesn't.
 
-Original running on [jamescooke.info](http://jamescooke.info), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
+Original running on [jamescooke.info](http://jamescooke.info) <br>
+Fork running on [erinnerungsfragmente.de](https://erinnerungsfragmente.de)
 
-Fork will be running on [erinnerungsfragmente.de](https://erinnerungsfragmente.de)
+![screenshot](screenshot.png)
 
-## Additional Information
+## Credits
 
-This theme has been forked from [jamescooke/droidstrap](https://github.com/jamescooke/droidstrap).
-
-I'd like to thank him for his hard work on this them and for providing it under the CC BY-SA 3.0 license. It allows me to fork the theme, bring in my personal flavour and be perfectly happy with it. 
+I'd like to thank James for his hard work on this theme and for providing it under the CC BY-SA 3.0 license. It allows me to bring in my requirements, share it and be perfectly happy with it.
 
 ## Features
 
 Theme is still in a very basic state. It has:
 
 * Basic content listing - home, tag, category.
-* Single post and single page templates. Articles can be linked to their source
-  code URLs.
+* Single post and single page templates.
 * A touch of responsiveness.
 * Tag pages.
 * Category pages.
 * Code highlighting with monokai.
+* Social links
+* Menu items (`MENUITEMS)
 
-And some bugs! 
+And some bugs! <br>
+(Couldn't find any so far, but you know it works.)
 
 ## Missing things
 
-* Author pages.
-* Multi language support.
 * Handling of Pelican links setting.
 * Clean and valid HTML - partly as a result of some external libraries.
 
 It's all open - contributions welcome, especially with HTML / CSS. Please check
 out the Issues.
+
+## Missing things (rullmann)
+
+* Static comments
+* flying pinguins (nyan cat style)
 
 ## Settings
 
@@ -43,24 +49,25 @@ We've stuck a few settings in to customise the theme.
 ### General
 
 * `PROFILE_IMG_URL` - Set the image for the top circle cutout. (Has no default yet).
-* `TAGLINE` - Used for the page titles and some meta tags.
+* `SOCIAL` - Add social links to your Menu
+* `MENUITEMS` - More items for the menu required? Just add them!
+* `DISPLAY_FEEDS` - If set to True feeds will be listed within the menu.
 
-### Article source links
+#### Social & Menu items
 
-Droidstrap can link to an article's source code within a repository, for
-example, on GitHub. Update the following settings to enable this feature:
+Social links do have icons. Just define `SOCIAL`in your `pelicanconf.py`:
 
-* `SHOW_SCM_LINKS` - Set to `True` to turn on article source links.
-* `SCM_BASE_URL` - Set as the public URL of your blog's source tree. E.g.
-  'https://github.com/jamescooke/blog/tree/master/'
-* `SCM_LINK_TEXT` - Optional, set a text to be used for article source links.
-  Defaults to 'Article source'.
+<code>SOCIAL = (('GitHub', 'https://github.com/rullmann'),)</code>
 
-Plus for each article that source should be shown a `scm_path` property should be
-added to the [article
-metadata](http://docs.getpelican.com/en/3.5.0/content.html#file-metadata). This
-should be the name of the file in the repository relative to the
-`SCM_BASE_URL`.
+In `droidsans.css` you can change the Social section to your needs. Maybe add some icons and send a pull request?
+
+The same is possible for Menu items.
+
+#### Feeds
+
+Feeds can be menu items or just within the meta section. It's up to you. <br>
+For the metadata section `FEED_ALL_RSS` and/or `FEED_ALL_ATOM` options must exist. <br>
+`DISPLAY_FEEDS` must be set in order to display the feeds as menu items.
 
 ## License & Contributors
 
