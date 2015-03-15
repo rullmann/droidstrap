@@ -13,8 +13,11 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
-        {% if FEED_RSS %}
-            <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
         {% endif %}
 
         {% block head %}
@@ -42,7 +45,7 @@
                                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                                 {% endfor %}
                             {% else %}
-                                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                        	{% if DISPLAY_CATEGORIES_ON_MENU %}
                                     {% for cat, null in categories %}
                                         <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                                     {% endfor %}
@@ -57,7 +60,14 @@
                               {% for name, link in SOCIAL %}
                               <li><a href="{{ link }}">{{ name }}</a><i></i></li>
                               {% endfor %}
-                            </ul>
+			    </ul>
+                            {% if FEED_ALL_ATOM %}
+			    <hr>
+                              <li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
+                            {% endif %}
+                            {% if FEED_ALL_RSS %}
+                              <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a></li>
+                            {% endif %}
                         </ul>
                     </nav>
                 </header>
