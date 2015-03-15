@@ -50,16 +50,22 @@
                                     {% endfor %}
                                 {% endif %}
                             {% endif %}
-                            {% for title, link in MENUITEMS %}
+                            {% if MENUITEMS %}
                             <hr>
-                                <li><a href="{{ link }}">{{ title }}</a></li>
+                            <ul class="menuitems">
+                            {% for title, link in MENUITEMS %}
+                                <li><a href="{{ link }}">{{ title }}</a><i></i></li>
                             {% endfor %}
+                            </ul>
+                            {% endif %}
+                            {% if SOCIAL %}
                             <hr>
                             <ul class="social">
                               {% for name, link in SOCIAL %}
                               <li><a href="{{ link }}">{{ name }}</a><i></i></li>
                               {% endfor %}
                             </ul>
+                            {% endif %}
                             {% if DISPLAY_FEEDS %}
                             <hr>
                             <ul class="feeds">

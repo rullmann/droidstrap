@@ -195,6 +195,25 @@ div.article-content li {
   padding-top: 4px;
 }
 
+/* Menu Items */
+
+.menuitems {
+  list-style-type: none;
+}
+
+.menuitems li {
+  clear: both;
+}
+
+.menuitems a {}
+
+.menuitems i { 
+  float: left;
+  margin-right: 3px;
+  padding-top: 4px;
+}
+.menuitems a[href*='confluence'] + i:before {content: url('../theme/images/icons/confluence-18px.png'); }
+
 /* About */
 
 aside ul {
