@@ -54,7 +54,7 @@
                             <hr>
                             <ul class="menuitems">
                             {% for title, link in MENUITEMS %}
-                                <li><a href="{{ link }}">{{ title }}</a><i></i></li>
+                                <li><a href="{{ link }}" target="_blank">{{ title }}</a><i></i></li>
                             {% endfor %}
                             </ul>
                             {% endif %}
@@ -62,15 +62,15 @@
                             <hr>
                             <ul class="social">
                               {% for name, link in SOCIAL %}
-                              <li><a href="{{ link }}">{{ name }}</a><i></i></li>
+                              <li><a href="{{ link }}" target="_blank">{{ name }}</a><i></i></li>
                               {% endfor %}
                             </ul>
                             {% endif %}
                             {% if DISPLAY_FEEDS %}
                             <hr>
                             <ul class="feeds">
-                              <li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} - RSS Feed"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="rss feed"/>RSS Feed</a><i></i></li>
-                              <li><a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} - Atom Feed"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="rss feed"/>Atom Feed</a><i></i></li>
+                              <li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" target="_blank" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} - RSS Feed"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="rss feed"/>RSS Feed</a><i></i></li>
+                              <li><a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" target="_blank" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} - Atom Feed"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-18px.png" alt="rss feed"/>Atom Feed</a><i></i></li>
                             </ul>
                             {% endif %}
                         </ul>
