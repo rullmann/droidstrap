@@ -177,6 +177,24 @@ div.article-content li {
 .social a[href*='rss.xml']:before {content: url('../theme/images/icons/feed-18px.png'); }
 .social a[href*='atom.xml']:before {content: url('../theme/images/icons/feed-18px.png'); }
 
+/* Feeds */
+
+.feeds {
+  list-style-type: none;
+}
+
+.feeds li {
+  clear: both;
+}
+
+.feeds a {}
+
+.feeds i { 
+  float: left;
+  margin-right: 3px;
+  padding-top: 4px;
+}
+
 /* About */
 
 aside ul {
