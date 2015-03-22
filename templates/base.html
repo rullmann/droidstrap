@@ -39,7 +39,7 @@
                         <a href="{{ SITEURL }}"><img id="profileimg" src="{{ PROFILE_IMG_URL }}" alt="{{ SITENAME }}" >{{ SITENAME }}</a></h2>
                     <nav>
                         <ul>
-                            {% if SITESUBNAME %}<li>{{ SITESUBNAME }}</li><br>{% endif %}
+                            {% if SITESUBNAME %}<li>{{ SITESUBNAME }}</li>{% endif %}
                             {% if DISPLAY_PAGES_ON_MENU %}
                                 {% for p in PAGES %}
                                     <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
