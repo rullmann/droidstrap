@@ -30,5 +30,15 @@
                 &ndash; <a href='{{ SCM_BASE_URL }}{{ article.scm_path }}'>{% if SCM_LINK_TEXT %}{{ SCM_LINK_TEXT }}{% else %}Article source{% endif %}</a>
             {% endif %}
         </p>
+
+        <p class="comments">
+            {% if STATIC_COMMENTS %}
+            <section id="comments" class="body">
+            <h3>Comments</h3>
+            This blog uses static comments. Comments welcome <a href="mailto:blog@erinnerungsfragmente.de?Subject={{ article.slug }}-{{ article.date.strftime('%Y-%m-%d') }}" title="´comment by email">by email</a>
+            {{ article.metadata.static_comments }}
+            </section>
+            {% endif %}
+        </p>
     </section>
 {% endblock content %}
