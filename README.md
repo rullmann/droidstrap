@@ -24,7 +24,7 @@ Theme is still in a very basic state. It has:
 * Category pages.
 * Code highlighting with monokai.
 * Social links
-* Menu items (`MENUITEMS)
+* Menu items (`MENUITEMS`)
 
 And some bugs! <br>
 (Couldn't find any so far, but you know it works.)
